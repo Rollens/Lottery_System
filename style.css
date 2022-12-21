@@ -1,0 +1,104 @@
+body{
+    background-color: #1E2B5B;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    background-color: #1E2B5B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;        
+}
+h1,h2{
+    color:white;
+}
+#MotionHolder{
+    height: 60%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin: 2.5%;
+}
+#WinnerInfo{
+    display: flex;
+    flex-direction: row;
+}
+h1{
+    margin: 10px;
+    padding-top: 2%;
+}
+h2{
+    margin: auto;
+    padding:10px;
+    font-size: 3rem;
+}
+.ShowID{
+    margin:auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    width: 15%;
+    height: 30%;
+}
+.number{
+    font-size: 54pt;
+    display: flex;
+    margin-left: 42%;
+    flex-direction: row;
+}
+p{
+    text-align:center;
+  }
+#Thousand{
+    background-color: pink;
+}
+#Hundred{
+    background-color: yellow;
+}
+#Ten{
+    background-color: orange;
+}
+#Digits{
+    background-color: greenyellow;
+}
+#WinnerID{
+    margin: auto;
+}
+.odometer{
+    font-size: 200pt;
+    color: white;
+}
+#waiting{
+    display: none;
+    flex-direction: row;
+    margin: auto;
+}
+.Mutil-WinnerCol{
+    width: 100%;
+    padding: 10px;
+    flex-direction: row;
+    font-size: 24pt;
+    text-align: center;
+    color:white;
+}
+ul{
+    list-style-type:none;
+}
+.MutilWinnerIndex{
+    font-size: 20pt;
+}
+#MutilCong{
+    display: none;
+    flex-direction: row;
+    margin: auto;
+}
+#MutilWinnerHolder{
+    display:flex;
+    flex-direction: column;
+}
+.digit{
+    font-size: 15rem;
+    font-family: sans-serif;
+}

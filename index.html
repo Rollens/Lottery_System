@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.min.js"></script>
+    <script src="./odometer/odometer.js"></script>
+    <link rel="stylesheet" href="./odometer/themes/odometer-theme-default.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>抽獎系統</title>
+</head>
+<body>
+    <div id="container">
+        <h1 v-on:click=>某某公司某某年尾牙抽獎</h1>
+        <h2 id="ShowPriceID">現在出抽第{{PriceID}}獎</h2>
+        <div id="MotionHolder">
+            <h2 id="dg1" class = 'digit'>2</h2>
+            <h2 id="dg2" class = 'digit'>0</h2>
+            <h2 id="dg3" class = 'digit'>2</h2>
+            <h2 id="dg4" class = 'digit'>2</h2>            
+        </div>
+        <h2 id="waiting">抽獎中...</h2>
+        <h2 id="MutilCong">恭喜上列同仁中獎！！！</h2>
+        <div id="WinnerInfo">
+            <h2>{{WinnerID}}</h2>
+            <h2>{{WinnerDept}}</h2>
+            <h2>{{WinnerChineseName}}</h2>
+            <h2>{{WinnerEnglishName}}</h2>
+        </div>
+        <button id="StartLottery" v-on:click="Lottery()" style="display:none">抽獎</button>
+        <button id="DeleteMutil" v-on:click="DeleteMutil()" style="display:none">清空畫面</button>
+            <div id="LoadList">
+                <input type="file" id="fileInput">
+            </div>
+    </div>
+</body>
+<script type="text/javascript" src="kernal.js"></script>
+</html>
